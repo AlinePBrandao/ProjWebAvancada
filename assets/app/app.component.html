@@ -1,0 +1,30 @@
+<!--<button (click)="onMudaMostrarElemento()">Click aqui DIV</button>
+    {{mostrarELemento}}
+<div *ngIf="mostrarELemento">
+    <p>Cade a div que esta aqui com um monte de elementos</p>
+    <select id="cboCidades">
+        <option value=""></option>
+        <option value="vix">Vitória</option>
+        <option value="vv">Vila Velha</option>
+    </select>
+    <button>Click aqui</button> 
+</div>
+<button (click)="valorNgSwitch=1">selecione - 1</button>
+<button (click)="valorNgSwitch=2">selecione - 2</button>
+<button (click)="valorNgSwitch=3">selecione - 3</button>
+<h5>Você selecionou : {{valorNgSwitch}}</h5>
+
+<input type="text" [(ngModel)]="nomeNgSwitch">
+{{nomeNgSwitch}}
+<ul [ngSwitch]="nomeNgSwitch">
+    <li *ngSwitchCase ="'Vinicius'">Bom dia Vinicius</li>
+    <li *ngSwitchCase ="'Rosalen'">Boa noite Rosalen </li>
+    <li *ngSwitchCase ="'da Silva'">Boa madrugada da Silva</li>
+    <li *ngSwitchDefault>Bye Bye</li>
+
+</ul>-->
+<div class="container">
+    <app-header></app-header>
+    <hr/>
+    <router-outlet></router-outlet> 
+</div>
